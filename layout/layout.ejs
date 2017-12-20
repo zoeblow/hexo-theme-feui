@@ -1,0 +1,33 @@
+<% var isIndex = page.path === 'index.html' %>
+<!doctype html>
+<html lang="en">
+<head>
+    <title><%- page.title ? page.title + ' — ' : '' %>Feui</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <link rel="icon" href="<%- url_for("/images/favicon.ico") %>" type="image/x-icon">
+    <title><%= config.title %></title>
+    <%- css('./css/style') %>
+    <script>window.PAGE_TYPE = "<%- page.type %>"</script>
+</head>
+<body class="<%- isIndex ? '' : 'docs' -%>">
+    <%- partial('_partial/header') %>
+    <% if (!isIndex) { %>
+      <div id="main" class="fix-sidebar">
+        <div class='main-content'>
+          <% if (page.blog_index!=true) { %>
+            <%- partial('pages') %>
+          <% } else { %>
+            <%- body %>
+          <% } %>
+        </div>
+      </div>
+      <%- js('./js/smooth-scroll.min.js') %>
+    <% } else { %>
+      <%- body %>
+    <% } %>
+    <%- js('./js/css.escape.js') %>
+    <%- js('./js/common.js') %>
+    <%- js('./js/index.js') %>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "hexo-theme-feui",
+  "version": "0.0.17",
+  "description": "feui文档 hexo主题项目",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoeblow/hexo-theme-feui.git"
+  },
+  "keywords": [
+    "FEUI",
+    "feui",
+    "Hexo"
+  ],
+  "author": "zoeblow <zoeblow@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zoeblow/hexo-theme-feui/issues"
+  },
+  "homepage": "https://github.com/zoeblow/hexo-theme-feui#readme",
+}

@@ -1,0 +1,3 @@
+<li><a href="<%- url_for("/feui/guide/") %>" class="nav-link<%- page.path.match(/\/(guide(?!\/team.html$)|api|style-guide|examples|cookbook)(\/|$)/) ? ' current' : '' %>">教程</a></li>
+<li><a href="<%- url_for("http://feui.gitee.io") %>" >示例</a></li>
+<li><a href="<%- url_for("/feui/guide/team.html") %>" class="nav-link team<%- page.path.match(/team\.html/) ? ' current' : '' %>">Team</a></li>

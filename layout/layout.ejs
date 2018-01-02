@@ -6,6 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
     <link rel="icon" href="<%- url_for("/images/favicon.ico") %>" type="image/x-icon">
+    <!--[if lte IE 9]>
+      <meta http-equiv="refresh" content="0;url=https://ifuyuan.wang/browser/">
+    <![endif]-->
     <title><%= config.title %></title>
     <%- css('./css/style') %>
     <script>window.PAGE_TYPE = "<%- page.type %>"</script>

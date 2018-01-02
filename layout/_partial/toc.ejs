@@ -3,23 +3,24 @@
     <% var fileName = p.path.replace(/^.+?\/([\w-]+)\.html/, '$1') %>
     <% if (type === 'guide') { %>
       <% if (fileName === 'index') { %>
-        <li><a class='title-16'>开发指南</a></li>
+        <li><a class='title-18'>开发指南</a></li>
       <% } %>
       <% if (fileName === 'component') { %>
-        <li><a class='title-16'>组件系统</a></li>
+        <li><a class='title-18'>组件系统</a></li>
       <% } %>
       <% if (fileName === 'team') { %>
-        <li><a class='title-16'>Team</a></li>
+        <li><a class='title-18'>Team</a></li>
       <% } %>
-      <% if (fileName === 'reactivity') { %>
-        <li><h3>Internals</h3></li>
+      <% if (fileName === 'badge') { %>
+        <li><a class='title-16'>基础组件</a></li>
       <% } %>
-      <% if (fileName === 'migration') { %>
-        <li><h3>Migrating</h3></li>
+      <% if (fileName === 'address') { %>
+        <li><a class='title-16'>表单组件</a></li>
       <% } %>
-      <% if (fileName === 'comparison') { %>
-        <li><h3>Meta</h3></li>
+      <% if (fileName === 'actionsheet') { %>
+        <li><a class='title-16'>反馈组件</a></li>
       <% } %>
+      
     <% } %>
     <% if (type === 'cookbook') { %>
       <% if (p.order === 1.1) { %>

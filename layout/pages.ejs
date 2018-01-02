@@ -14,22 +14,14 @@
   </div>
 <% } %>
 
-<div class="content <%- page.type ? page.type + ' with-sidebar' : '' %> <%- page.type === 'guide' ? page.path.replace(/.+\//, '').replace('.html', '') + '-guide' : '' %>">
+<div  id='content' class="content <%- page.type ? page.type + ' with-sidebar' : '' %> <%- page.type === 'guide' ? page.path.replace(/.+\//, '').replace('.html', '') + '-guide' : '' %>">
   <div class='content_box'>
-    <% if (page.type) { %>
-      <% if (page.type === 'menu') { %>
-        <form id="search-form">
-          <input type="text" id="search-query-menu" class="search-query st-default-search-input">
-        </form>
-        <%- partial('_partial/toc', { type: 'guide' }) %>
-      <% } else { %>
-      <!--  add -->
-      <% } %>
-    <% } %>
     <% if (page.title) { %>
       <h1><%- page.title %><%- page.type === 'examples' ? ' Example' : '' %></h1>
     <% } %>
-    <%- page.content %>
+    <div id='pContent'>
+      <%- page.content %>
+    </div>
     <% if (page.type === 'guide') { %>
       <div class="guide-links">
         <% site.pages.find({ type: page.type, order: page.order - 1 }).each(function (page) { %>
@@ -42,7 +34,6 @@
     <% } %>
     <div class="footer">
       文件翻译错误或者想参与贡献?
-      <!-- https://gitee.com/feui/feui-hexo/blob/master/source/<%- page.path.replace(/\.html$/, '.md') %> -->
       <a href="https://gitee.com/feui/feui-hexo/blob/master/source/<%- page.path.replace(/\.html$/, '.md') %>" target="_blank">
         在Github编辑此页面!
       </a>

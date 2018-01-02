@@ -300,7 +300,7 @@ a {
 .sidebar .sidebar-link {
     color: #7f8c8d;
     display: block;
-    padding: 0.5em 2em;
+    padding: 0.5em 2.5em;
 }
 
 .sidebar .sidebar-link.current {
@@ -569,7 +569,7 @@ a {
     margin: 1em 0;
 }
 
-.content .content_box>table {
+.content .content_box #pContent>table {
     border-spacing: 0;
     border-collapse: collapse;
     margin: 1.2em auto;
@@ -580,8 +580,8 @@ a {
     overflow-x: auto;
 }
 
-.content .content_box>table td,
-.content .content_box>table th {
+.content .content_box #pContent>table td,
+.content .content_box #pContent>table th {
     line-height: 1.5em;
     padding: 0.4em 0.8em;
     border: none;
@@ -589,7 +589,7 @@ a {
     font-size: 14px;
 }
 
-.content .content_box>table th {
+.content .content_box #pContent>table th {
     padding: 8px 10px;
     text-align: left;
     font-weight: 400;
@@ -597,8 +597,8 @@ a {
     border: 1px solid #eaeefb;
 }
 
-.content .content_box>table th code,
-.content .content_box>table tr:nth-child(2n) code {
+.content .content_box #pContent>table th code,
+.content .content_box #pContent>table tr:nth-child(2n) {
     background-color: #efefef;
 }
 
@@ -716,11 +716,20 @@ pre {
     color: #525252;
 }
 
-.list .title-16 {
+.list .title-18 {
     font-size: 18px;
     display: block;
-    color: #455a64;
+    color: rgba(43, 43, 43, 1);
     padding: 8px 20px;
+    line-height: 24px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.list .title-16 {
+    font-size: 16px;
+    display: block;
+    color: rgba(70,90,110,.8);
+    padding: 8px 26px;
     line-height: 24px;
     -webkit-transition: all .3s;
     transition: all .3s;
@@ -792,7 +801,7 @@ pre .prompt {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: -60px auto -140px;
+    margin: -60px auto -158px;
 }
 .index-footer{
     margin-top: 10px;
@@ -801,21 +810,19 @@ pre .prompt {
     color: rgba(0,0,0,.5);
     background-color:rgba(0,0,0,.1);
 }
-#mobile{
+#mobile,#mobile2{
     display: none;
 }
-
-
+#footer .links a{
+    line-height: 40px;
+}
 @media (max-width: 767px) {
-    body{
-        background: red;
-    }
     #header {
         text-align: center;
         position: relative;
         height:auto;
         padding: 10px 0;
-        z-index: 1000001
+        z-index: 1000001;
     }
     #header #mobile{
         margin-top: 2px;
@@ -916,6 +923,9 @@ pre .prompt {
     }
     .content_box h1,.content_box h2,.content_box h3{
         text-align: center;
+    }
+    #footer .fenge{
+        display:none;
     }
     #mask{
         position: absolute;

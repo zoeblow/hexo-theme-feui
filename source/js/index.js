@@ -3,6 +3,7 @@ console.log('Feui')
 var ifGuide = window.location.pathname.indexOf("guide") > -1;
 var hostname = window.location.hostname;
 var protocol = window.location.protocol
+var pathname = window.location.pathname
 
 //非https 强制跳转到https
 var ignorePath = ["localhost", "127.0.0.1", "172.30.5.37"].indexOf(hostname) == -1;
@@ -68,7 +69,9 @@ if (ifGuide) {
 }
 
 // id为pContent中的所有的A连接可以新页面打开
-var As = document.getElementById("pContent").getElementsByTagName("a");
-for (var i = 0; i < As.length; i++) {
-  As[i].target = "_blank";
+if (pathname.indexOf("guide") >= 0){
+  var As = document.getElementById("pContent").getElementsByTagName("a");
+  for (var i = 0; i < As.length; i++) {
+    As[i].target = "_blank";
+  }
 }

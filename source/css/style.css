@@ -236,7 +236,9 @@ a {
 #hexo .button:first-child {
     margin-right: 1em;
 }
-
+#hexo .button:first-child:hover{
+    opacity: 0.8;
+}
 #hexo .social-buttons {
     list-style-type: none;
     padding: 0;
@@ -250,7 +252,6 @@ a {
 
 
 /* sidebar */
-
 .sidebar {
     padding: 20px 0;
     min-width: 280px;
@@ -271,17 +272,6 @@ a {
 
 .menu-sub li {
     margin: 0.3em 0em;
-}
-
-.menu-sub li:hover {
-    /* background: #f5f7fa; */
-}
-
-.sidebar li {}
-
-.sidebar .sidebar-inner {
-    /* width: 260px; */
-    /* padding: 40px 20px 60px 60px; */
 }
 
 .sidebar .version-select {
@@ -396,7 +386,7 @@ a {
 
 #highlights .inner {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
     text-align: center;
 }
 
@@ -430,22 +420,6 @@ a {
     position: relative;
     padding-bottom: 75px;
     padding: 30px;
-}
-
-.content.api>a:first-of-type>h2 {
-    margin-top: 0;
-    padding-top: 0;
-}
-
-.content.api ul {
-    padding-left: 1.25em;
-    line-height: 1.4em;
-}
-
-.content.api ul ul,
-.content.api ul p:not(.tip) {
-    padding-bottom: 0;
-    margin: 1.2em 0;
 }
 
 .content a.button {
@@ -550,6 +524,9 @@ a {
 .content a {
     color: #4a90e2;
     font-weight: 600;
+}
+.content a:hover{
+    opacity: 0.8;
 }
 
 .content blockquote {

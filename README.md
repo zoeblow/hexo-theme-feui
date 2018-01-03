@@ -5,9 +5,6 @@
 
 [在线预览 Preview](https://feui.gitee.io/docs)
 
-### V 0.2.1
-> 排除非首页添加`a`链接可以新标签打开
-
 ### V 0.2.0
 > `pContent`中的`markdown`超链接可以新标签打开
 

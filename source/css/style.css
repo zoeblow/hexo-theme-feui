@@ -291,6 +291,7 @@ a {
     color: #7f8c8d;
     display: block;
     padding: 0.5em 2.5em;
+    transition: 0.2s;
 }
 
 .sidebar .sidebar-link.current {
@@ -533,6 +534,7 @@ a {
     margin: 2em 0;
     padding-left: 20px;
     border-left: 4px solid #4a90e2;
+    border-radius: 2px;
 }
 
 .content blockquote p {

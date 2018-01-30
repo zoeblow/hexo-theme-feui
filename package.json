@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-feui",
-  "version": "0.0.17",
+  "version": "0.2.3",
   "description": "feui文档 hexo主题项目",
   "main": "index.js",
   "directories": {

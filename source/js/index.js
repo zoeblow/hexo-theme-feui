@@ -75,3 +75,22 @@ if (pathname.indexOf("guide") >= 0){
     As[i].target = "_blank";
   }
 }
+
+(function() {
+  // var $w = $(window);
+  var $prog2 = document.getElementById("progress");
+  var wh = window.innerHeight;
+  var h = document.body.scrollHeight;
+  var sHeight = h - wh;
+  document.onscroll = function (params) {
+     window.requestAnimationFrame(function() {
+       var perc = Math.max(0, Math.min(1, document.documentElement.scrollTop / sHeight));
+       updateProgress(perc);
+     });
+  }
+
+  function updateProgress(perc) {
+    $prog2.style.width = perc * 100 + "%";
+    // console.log(perc * 100 + "%");
+  }
+})();

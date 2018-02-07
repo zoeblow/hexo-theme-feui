@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-feui",
-  "version": "0.2.3",
+  "version": "0.2.1",
   "description": "feui文档 hexo主题项目",
   "main": "index.js",
   "directories": {
@@ -10,11 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/zoeblow/hexo-theme-feui.git"
   },
-  "keywords": [
-    "FEUI",
-    "feui",
-    "Hexo"
-  ],
+  "keywords": ["FEUI", "feui", "Hexo"],
   "author": "zoeblow <zoeblow@gmail.com>",
   "license": "MIT",
   "bugs": {
